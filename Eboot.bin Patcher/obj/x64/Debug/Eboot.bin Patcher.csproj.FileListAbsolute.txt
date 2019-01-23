@@ -1,0 +1,12 @@
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\bin\x64\Debug\Eboot.bin Patcher.exe.config
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\bin\x64\Debug\Eboot.bin Patcher.exe
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\bin\x64\Debug\Eboot.bin Patcher.pdb
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin_Patcher.Credits.resources
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin_Patcher.Help.resources
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin_Patcher.Properties.Resources.resources
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin Patcher.csproj.GenerateResource.cache
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin Patcher.csproj.CoreCompileInputs.cache
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin Patcher.exe
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin Patcher.pdb
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin Patcher.csprojAssemblyReference.cache
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\x64\Debug\Eboot.bin_Patcher.Main.resources
