@@ -66,17 +66,6 @@ namespace Eboot.bin_Patcher
                     FCCCfile += Fbr.ReadByte().ToString("X2");
                 }
                 Fbr.Close();
-                /// and Uncharted The Lost Legacy™
-                OpenFileDialog UTLCOFD = new OpenFileDialog();
-                FOFD.ShowDialog();
-                BinaryReader UTLCbr = new BinaryReader(File.OpenRead(OFD.FileName));
-                string Offset = null;
-                for (int i = 0x20003F; i <= 0x200047; i++)
-                {
-                    Fbr.BaseStream.Position = i;
-                    Offset += Fbr.ReadByte().ToString("X2");
-                }
-                Fbr.Close();
             }
         }
 
