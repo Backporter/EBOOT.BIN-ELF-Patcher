@@ -33,18 +33,17 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.Help = new System.Windows.Forms.Button();
-            this.F4 = new System.Windows.Forms.CheckBox();
-            this.SSE = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.NO = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Credits
             // 
             this.Credits.AutoSize = true;
-            this.Credits.Location = new System.Drawing.Point(138, 62);
+            this.Credits.Location = new System.Drawing.Point(148, 79);
             this.Credits.Name = "Credits";
             this.Credits.Size = new System.Drawing.Size(94, 23);
             this.Credits.TabIndex = 2;
@@ -58,7 +57,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(138, 4);
+            this.button1.Location = new System.Drawing.Point(148, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(94, 23);
             this.button1.TabIndex = 4;
@@ -68,7 +67,7 @@
             // 
             // Help
             // 
-            this.Help.Location = new System.Drawing.Point(138, 91);
+            this.Help.Location = new System.Drawing.Point(148, 111);
             this.Help.Name = "Help";
             this.Help.Size = new System.Drawing.Size(94, 23);
             this.Help.TabIndex = 6;
@@ -76,38 +75,9 @@
             this.Help.UseVisualStyleBackColor = true;
             this.Help.Click += new System.EventHandler(this.Help_Click);
             // 
-            // F4
-            // 
-            this.F4.AutoSize = true;
-            this.F4.Location = new System.Drawing.Point(238, 50);
-            this.F4.Name = "F4";
-            this.F4.Size = new System.Drawing.Size(66, 17);
-            this.F4.TabIndex = 10;
-            this.F4.Text = "Fallout 4";
-            this.F4.UseVisualStyleBackColor = true;
-            // 
-            // SSE
-            // 
-            this.SSE.AutoSize = true;
-            this.SSE.Location = new System.Drawing.Point(238, 27);
-            this.SSE.Name = "SSE";
-            this.SSE.Size = new System.Drawing.Size(130, 17);
-            this.SSE.TabIndex = 11;
-            this.SSE.Text = "Skyrim Special Edition";
-            this.SSE.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Eboot.bin_Patcher.Properties.Resources._67d967e46df207b2c8afb3e4c26ae805;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 128);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(138, 33);
+            this.button3.Location = new System.Drawing.Point(148, 50);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(94, 23);
             this.button3.TabIndex = 13;
@@ -115,37 +85,48 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // NO
+            // pictureBox1
             // 
-            this.NO.AutoSize = true;
-            this.NO.Checked = true;
-            this.NO.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.NO.Location = new System.Drawing.Point(238, 4);
-            this.NO.Name = "NO";
-            this.NO.Size = new System.Drawing.Size(63, 17);
-            this.NO.TabIndex = 14;
-            this.NO.Text = "Nothing";
-            this.NO.UseVisualStyleBackColor = true;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(130, 128);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(285, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(116, 20);
+            this.textBox1.TabIndex = 16;
+            this.textBox1.Text = "Put patch verson here";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(282, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Use this to type in the game and patch";
             // 
             // Main
             // 
-            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(372, 136);
-            this.Controls.Add(this.NO);
+            this.ClientSize = new System.Drawing.Size(481, 166);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.SSE);
-            this.Controls.Add(this.F4);
             this.Controls.Add(this.Help);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Credits);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Text = "PS4 EBOOT.BIN PATCHER";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,11 +138,10 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Help;
-        private System.Windows.Forms.CheckBox F4;
-        private System.Windows.Forms.CheckBox SSE;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.CheckBox NO;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -62,10 +62,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(149, 34);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(638, 13);
+            this.label2.Size = new System.Drawing.Size(969, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "A: Select The Game you want to Patch From The Right Side, and hit Open PS4 ELF an" +
-    "d select, the eboot.bin And Hit Patch PS4 ELF";
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // label3
             // 
@@ -79,7 +78,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(149, 80);
+            this.label4.Location = new System.Drawing.Point(149, 82);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(197, 13);
             this.label4.TabIndex = 4;
@@ -108,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(791, 152);
+            this.ClientSize = new System.Drawing.Size(1123, 152);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
