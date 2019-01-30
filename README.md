@@ -1,4 +1,5 @@
 # EBOOT.BIN-ELF-Patcher
+"This only works with SSE version 1.09 and 1.22 for Fallout 4" is no longer true.
 this supports updates: skyrim 1.09 & skyrim 1.08 & fallout 4 1.22 
 Check the changelog.MD for more info
 
