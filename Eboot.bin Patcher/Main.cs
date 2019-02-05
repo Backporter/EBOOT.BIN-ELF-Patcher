@@ -15,7 +15,7 @@ namespace Eboot.bin_Patcher
     {
         public Main()
         {
-            InitializeComponent();
+           InitializeComponent();
         }
 
         private void Credits_Click(object sender, EventArgs e)
@@ -38,6 +38,7 @@ namespace Eboot.bin_Patcher
 
         private void Open_Click(object sender, EventArgs e)
         {
+            
             //Ihis Is Offsets For skyrim
             OpenFileDialog SOFD = new OpenFileDialog();
             SOFD.ShowDialog();
@@ -70,6 +71,17 @@ namespace Eboot.bin_Patcher
                 {
                     Fbr.BaseStream.Position = i;
                     S8CCCfile += Fbr.ReadByte().ToString("X2");
+                }
+                Fbr.Close();
+                /// EU skyrim 1.09
+                OpenFileDialog EUSOFD = new OpenFileDialog();
+                FOFD.ShowDialog();
+                BinaryReader EUSbr = new BinaryReader(File.OpenRead(OFD.FileName));
+                string EUSCCCfile = null;
+                for (int i = 0x18B6F0D; i <= 0x18B6F16; i++)
+                {
+                    Fbr.BaseStream.Position = i;
+                    EUSCCCfile += Fbr.ReadByte().ToString("X2");
                 }
                 Fbr.Close();
             }
@@ -193,6 +205,31 @@ namespace Eboot.bin_Patcher
                 Fbw.BaseStream.Position = 0x1E49DEC;
                 Fbw.Write(0x00);
                 Fbw.Close();
+                MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
+            }
+            else if (textBox1.Text == "EU skyrim 1.09")
+            {
+                // this is for the EU verion of skyrim
+                BinaryWriter EUSbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
+                EUSbw.BaseStream.Position = 0x18B6F0D;
+                EUSbw.Write(0x6D);
+                EUSbw.BaseStream.Position = 0x18B6F0E;
+                EUSbw.Write(0x6F);
+                EUSbw.BaseStream.Position = 0x18B6F0F;
+                EUSbw.Write(0x64);
+                EUSbw.BaseStream.Position = 0x18B6F10;
+                EUSbw.Write(0x73);
+                EUSbw.BaseStream.Position = 0x18B6F11;
+                EUSbw.Write(0x2E);
+                EUSbw.BaseStream.Position = 0x18B6F12;
+                EUSbw.Write(0x74);
+                EUSbw.BaseStream.Position = 0x18B6F13;
+                EUSbw.Write(0x78);
+                EUSbw.BaseStream.Position = 0x18B6F14;
+                EUSbw.Write(0x74);
+                EUSbw.BaseStream.Position = 0x18B6F15;
+                EUSbw.Write(0x00);
+                EUSbw.Close();
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
             else if (textBox1.Text == "US fallout 4 1.21")
