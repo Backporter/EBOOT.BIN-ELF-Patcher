@@ -1,5 +1,5 @@
 I Redid the UI/GUI as many where saying they didn't like it, i also made it easier to add other patches
-![Screenshot](new.png)
+![Screenshot](new.PNG)
 
 
 and the old
