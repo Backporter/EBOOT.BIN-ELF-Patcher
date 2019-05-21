@@ -11,3 +11,4 @@ C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\Debug
 C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\Debug\Eboot.bin Patcher.csproj.CoreCompileInputs.cache
 C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\Debug\Eboot.bin Patcher.exe
 C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\Debug\Eboot.bin Patcher.pdb
+C:\Users\Logan Melott\source\repos\Eboot.bin Patcher\Eboot.bin Patcher\obj\Debug\Eboot.bin Patcher.csprojAssemblyReference.cache
