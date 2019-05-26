@@ -517,6 +517,54 @@ namespace Eboot.bin_Patcher
                 Fbw.Close();
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
+            if (textBox1.Text == "EU fallout 4 goty 1.22")
+            {
+                BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
+                Fbw.BaseStream.Position = 0x1E573B4;
+                Fbw.Write(0x6D);
+                Fbw.BaseStream.Position = 0x1E573B5;
+                Fbw.Write(0x6F);
+                Fbw.BaseStream.Position = 0x1E573B6;
+                Fbw.Write(0x64);
+                Fbw.BaseStream.Position = 0x1E573B7;
+                Fbw.Write(0x73);
+                Fbw.BaseStream.Position = 0x1E573B8;
+                Fbw.Write(0x2E);
+                Fbw.BaseStream.Position = 0x1E573B9;
+                Fbw.Write(0x74);
+                Fbw.BaseStream.Position = 0x1E573BA;
+                Fbw.Write(0x78);
+                Fbw.BaseStream.Position = 0x1E573BB;
+                Fbw.Write(0x74);
+                Fbw.BaseStream.Position = 0x1E573BC;
+                Fbw.Write(0x00);
+                Fbw.Close();
+                MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
+            }
+            if (textBox1.Text == "Extracted FPKG EU fallout 4 goty 1.22")
+            {
+                BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
+                Fbw.BaseStream.Position = 0x1E57514;
+                Fbw.Write(0x6D);
+                Fbw.BaseStream.Position = 0x1E57515;
+                Fbw.Write(0x6F);
+                Fbw.BaseStream.Position = 0x1E57516;
+                Fbw.Write(0x64);
+                Fbw.BaseStream.Position = 0x1E57517;
+                Fbw.Write(0x73);
+                Fbw.BaseStream.Position = 0x1E57518;
+                Fbw.Write(0x2E);
+                Fbw.BaseStream.Position = 0x1E57519;
+                Fbw.Write(0x74);
+                Fbw.BaseStream.Position = 0x1E5751A;
+                Fbw.Write(0x78);
+                Fbw.BaseStream.Position = 0x1E5751B;
+                Fbw.Write(0x74);
+                Fbw.BaseStream.Position = 0x1E5751C;
+                Fbw.Write(0x00);
+                Fbw.Close();
+                MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
+            }
 
             else if (textBox1.Text == "")
             {

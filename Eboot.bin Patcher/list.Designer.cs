@@ -96,6 +96,10 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -260,7 +264,7 @@
             // 
             // textBox65
             // 
-            this.textBox65.Location = new System.Drawing.Point(12, 713);
+            this.textBox65.Location = new System.Drawing.Point(12, 739);
             this.textBox65.Name = "textBox65";
             this.textBox65.Size = new System.Drawing.Size(167, 20);
             this.textBox65.TabIndex = 61;
@@ -268,7 +272,7 @@
             // 
             // textBox66
             // 
-            this.textBox66.Location = new System.Drawing.Point(185, 713);
+            this.textBox66.Location = new System.Drawing.Point(185, 739);
             this.textBox66.Name = "textBox66";
             this.textBox66.Size = new System.Drawing.Size(581, 20);
             this.textBox66.TabIndex = 60;
@@ -276,7 +280,7 @@
             // 
             // textBox71
             // 
-            this.textBox71.Location = new System.Drawing.Point(12, 739);
+            this.textBox71.Location = new System.Drawing.Point(12, 765);
             this.textBox71.Name = "textBox71";
             this.textBox71.Size = new System.Drawing.Size(167, 20);
             this.textBox71.TabIndex = 67;
@@ -284,7 +288,7 @@
             // 
             // textBox72
             // 
-            this.textBox72.Location = new System.Drawing.Point(185, 739);
+            this.textBox72.Location = new System.Drawing.Point(185, 765);
             this.textBox72.Name = "textBox72";
             this.textBox72.Size = new System.Drawing.Size(581, 20);
             this.textBox72.TabIndex = 66;
@@ -292,7 +296,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 791);
+            this.textBox3.Location = new System.Drawing.Point(12, 817);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(167, 20);
             this.textBox3.TabIndex = 69;
@@ -300,7 +304,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 765);
+            this.textBox4.Location = new System.Drawing.Point(12, 791);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(167, 20);
             this.textBox4.TabIndex = 68;
@@ -308,7 +312,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 843);
+            this.textBox5.Location = new System.Drawing.Point(12, 869);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(167, 20);
             this.textBox5.TabIndex = 71;
@@ -316,7 +320,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(12, 817);
+            this.textBox6.Location = new System.Drawing.Point(12, 843);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(167, 20);
             this.textBox6.TabIndex = 70;
@@ -324,7 +328,7 @@
             // 
             // textBox26
             // 
-            this.textBox26.Location = new System.Drawing.Point(185, 843);
+            this.textBox26.Location = new System.Drawing.Point(185, 869);
             this.textBox26.Name = "textBox26";
             this.textBox26.Size = new System.Drawing.Size(581, 20);
             this.textBox26.TabIndex = 81;
@@ -332,7 +336,7 @@
             // 
             // textBox27
             // 
-            this.textBox27.Location = new System.Drawing.Point(185, 817);
+            this.textBox27.Location = new System.Drawing.Point(185, 843);
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(581, 20);
             this.textBox27.TabIndex = 80;
@@ -340,7 +344,7 @@
             // 
             // textBox28
             // 
-            this.textBox28.Location = new System.Drawing.Point(185, 791);
+            this.textBox28.Location = new System.Drawing.Point(185, 817);
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(581, 20);
             this.textBox28.TabIndex = 79;
@@ -348,7 +352,7 @@
             // 
             // textBox31
             // 
-            this.textBox31.Location = new System.Drawing.Point(185, 765);
+            this.textBox31.Location = new System.Drawing.Point(185, 791);
             this.textBox31.Name = "textBox31";
             this.textBox31.Size = new System.Drawing.Size(581, 20);
             this.textBox31.TabIndex = 78;
@@ -612,7 +616,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(216, 869);
+            this.textBox7.Location = new System.Drawing.Point(216, 895);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(581, 20);
             this.textBox7.TabIndex = 123;
@@ -620,7 +624,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(12, 869);
+            this.textBox8.Location = new System.Drawing.Point(12, 895);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(198, 20);
             this.textBox8.TabIndex = 122;
@@ -642,11 +646,47 @@
             this.textBox10.TabIndex = 125;
             this.textBox10.Text = "Raw and not extracted by orbis-pub-ckk.exe";
             // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(216, 921);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(581, 20);
+            this.textBox13.TabIndex = 127;
+            this.textBox13.Text = "extracted by orbis-pub-ckk.exe";
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(12, 921);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(198, 20);
+            this.textBox14.TabIndex = 126;
+            this.textBox14.Text = "Extracted FPKG EU fallout 4 goty 1.22";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(139, 713);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(627, 20);
+            this.textBox15.TabIndex = 129;
+            this.textBox15.Text = "Raw and not extracted by orbis-pub-ckk.exe";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Location = new System.Drawing.Point(12, 713);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(121, 20);
+            this.textBox16.TabIndex = 128;
+            this.textBox16.Text = "EU fallout 4 goty 1.22";
+            // 
             // list
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 904);
+            this.ClientSize = new System.Drawing.Size(864, 952);
+            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox7);
@@ -792,5 +832,9 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox16;
     }
 }
