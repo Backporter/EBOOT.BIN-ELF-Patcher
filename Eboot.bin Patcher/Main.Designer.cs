@@ -35,10 +35,10 @@
             this.Help = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,14 +96,6 @@
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(285, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 20);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.Text = "Put patch verson here";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -132,16 +124,61 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Change ^ or it will not work";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Extracted FPKG US skyrim 1.09",
+            "Extracted FPKG US skyrim 1.08",
+            "Extracted FPKG EU skyrim 1.09",
+            "Extracted FPKG EU skyrim 1.08",
+            "US skyrim 1.09",
+            "EU skyrim 1.09",
+            "US skyrim 1.08",
+            "US skyrim 1.07",
+            "US skyrim 1.06",
+            "US skyrim 1.05",
+            "US skyrim 1.04",
+            "US skyrim 1.03",
+            "US skyrim 1.02",
+            "US skyrim 1.01",
+            "US skyrim 1.00",
+            "EU skyrim 1.07",
+            "EU skyrim 1.06",
+            "EU skyrim 1.05",
+            "EU skyrim 1.04",
+            "EU skyrim 1.03",
+            "EU skyrim 1.02",
+            "EU skyrim 1.01",
+            "EU skyrim 1.00",
+            "Extracted FPKG US fallout 4 1.22",
+            "Extracted FPKG US fallout 4 1.21",
+            "US fallout 4 1.22",
+            "US fallout 4 1.21",
+            "US fallout 4 1.20",
+            "US fallout 4 1.19",
+            "Extracted FPKG US fallout 4 1.19",
+            "Extracted FPKG EU fallout 4 goty 1.20",
+            "EU fallout 4 goty 1.20",
+            "EU fallout 4 goty 1.22",
+            "Extracted FPKG EU fallout 4 goty 1.22"});
+            this.comboBox1.Location = new System.Drawing.Point(285, 37);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(223, 21);
+            this.comboBox1.TabIndex = 20;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(520, 166);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Help);
@@ -150,6 +187,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Text = "PS4 EBOOT.BIN PATCHER";
+            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -163,10 +201,10 @@
         private System.Windows.Forms.Button Help;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

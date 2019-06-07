@@ -18,6 +18,15 @@ namespace Eboot.bin_Patcher
            InitializeComponent();
         }
 
+        private void Main_Load(object sender, EventArgs e)
+        {
+            comboBox1.Text = "";
+            if (comboBox1.Text == "")
+            {
+                comboBox1.SelectedIndex = -0;
+            }
+        }
+
         private void Credits_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms["Credits"] == null)
@@ -105,7 +114,11 @@ namespace Eboot.bin_Patcher
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "Extracted FPKG US skyrim 1.09")
+            if (comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Pick a game to patch");
+            }
+            if (comboBox1.Text == "Extracted FPKG US skyrim 1.09")
             {
                 BinaryWriter Sbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Sbw.BaseStream.Position = 0x18B706D;
@@ -128,7 +141,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "Extracted FPKG US skyrim 1.08")
+            if (comboBox1.Text == "Extracted FPKG US skyrim 1.08")
             {
                 BinaryWriter Sbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Sbw.BaseStream.Position = 0x18B6C4D;
@@ -151,7 +164,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "Extracted FPKG EU skyrim 1.09")
+            if (comboBox1.Text == "Extracted FPKG EU skyrim 1.09")
             {
                 BinaryWriter Sbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Sbw.BaseStream.Position = 0x18B706D;
@@ -174,12 +187,12 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "Extracted FPKG EU skyrim 1.08")
+            if (comboBox1.Text == "Extracted FPKG EU skyrim 1.08")
             {
                 MessageBox.Show("where did you get this update?");
             }
 
-            if (textBox1.Text == "US skyrim 1.09")
+            if (comboBox1.Text == "US skyrim 1.09")
             {
                 BinaryWriter Sbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Sbw.BaseStream.Position = 0x18ABEBD;
@@ -202,7 +215,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "EU skyrim 1.09")
+            if (comboBox1.Text == "EU skyrim 1.09")
             {
                 BinaryWriter Sbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Sbw.BaseStream.Position = 0x18B6F0D;
@@ -225,7 +238,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            else if (textBox1.Text == "US skyrim 1.08")
+            else if (comboBox1.Text == "US skyrim 1.08")
             {
                 BinaryWriter S8Sbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 S8Sbw.BaseStream.Position = 0x18ABA9D;
@@ -249,72 +262,72 @@ namespace Eboot.bin_Patcher
             }
 
 
-            else if (textBox1.Text == "US skyrim 1.07")
+            else if (comboBox1.Text == "US skyrim 1.07")
             {
                 MessageBox.Show("i couldn't find 1.07's update sorry :(");
             }
-            else if (textBox1.Text == "US skyrim 1.06")
+            else if (comboBox1.Text == "US skyrim 1.06")
             {
                 MessageBox.Show("this update is not supported sorry :(");
             }
-            else if (textBox1.Text == "US skyrim 1.05")
+            else if (comboBox1.Text == "US skyrim 1.05")
             {
                 MessageBox.Show("this update is not supported sorry :(");
             }
-            else if (textBox1.Text == "US skyrim 1.04")
+            else if (comboBox1.Text == "US skyrim 1.04")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "US skyrim 1.03")
+            else if (comboBox1.Text == "US skyrim 1.03")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "US skyrim 1.02")
+            else if (comboBox1.Text == "US skyrim 1.02")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "US skyrim 1.01")
+            else if (comboBox1.Text == "US skyrim 1.01")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "US skyrim 1.00")
+            else if (comboBox1.Text == "US skyrim 1.00")
             {
                 MessageBox.Show("this can not be patched and does not need patching");
             }
-            else if (textBox1.Text == "EU skyrim 1.07")
+            else if (comboBox1.Text == "EU skyrim 1.07")
             {
                 MessageBox.Show("i couldn't find 1.07's update sorry :(");
             }
-            else if (textBox1.Text == "EU skyrim 1.06")
+            else if (comboBox1.Text == "EU skyrim 1.06")
             {
                 MessageBox.Show("this update is not supported sorry :(");
             }
-            else if (textBox1.Text == "EU skyrim 1.05")
+            else if (comboBox1.Text == "EU skyrim 1.05")
             {
                 MessageBox.Show("this update is not supported sorry :(");
             }
-            else if (textBox1.Text == "EU skyrim 1.04")
+            else if (comboBox1.Text == "EU skyrim 1.04")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "EU skyrim 1.03")
+            else if (comboBox1.Text == "EU skyrim 1.03")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "EU skyrim 1.02")
+            else if (comboBox1.Text == "EU skyrim 1.02")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "EU skyrim 1.01")
+            else if (comboBox1.Text == "EU skyrim 1.01")
             {
                 MessageBox.Show("where did you get this update?");
             }
-            else if (textBox1.Text == "EU skyrim 1.00")
+            else if (comboBox1.Text == "EU skyrim 1.00")
             {
                 MessageBox.Show("this can not be patched and does not need patching");
             }
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            if (textBox1.Text == "Extracted FPKG US fallout 4 1.22")
+            if (comboBox1.Text == "Extracted FPKG US fallout 4 1.22")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E57514;
@@ -339,7 +352,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "Extracted FPKG US fallout 4 1.21")
+            if (comboBox1.Text == "Extracted FPKG US fallout 4 1.21")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E57514;
@@ -364,7 +377,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "US fallout 4 1.22")
+            if (comboBox1.Text == "US fallout 4 1.22")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E49DE4;
@@ -389,7 +402,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "US fallout 4 1.21")
+            if (comboBox1.Text == "US fallout 4 1.21")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E49DE4;
@@ -414,12 +427,12 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "US fallout 4 1.20")
+            if (comboBox1.Text == "US fallout 4 1.20")
             {
                 MessageBox.Show("i couldn't find 1.20's update sorry :(");
             }
 
-            if (textBox1.Text == "US fallout 4 1.19")
+            if (comboBox1.Text == "US fallout 4 1.19")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E49784;
@@ -444,7 +457,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            if (textBox1.Text == "Extracted FPKG US fallout 4 1.19")
+            if (comboBox1.Text == "Extracted FPKG US fallout 4 1.19")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E56EB4;
@@ -469,7 +482,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            else if (textBox1.Text == "Extracted FPKG EU fallout 4 goty 1.20")
+            else if (comboBox1.Text == "Extracted FPKG EU fallout 4 goty 1.20")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E575B4;
@@ -493,7 +506,7 @@ namespace Eboot.bin_Patcher
                 Fbw.Close();
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
-            if (textBox1.Text == "EU fallout 4 goty 1.20")
+            if (comboBox1.Text == "EU fallout 4 goty 1.20")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E57454;
@@ -517,7 +530,7 @@ namespace Eboot.bin_Patcher
                 Fbw.Close();
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
-            if (textBox1.Text == "EU fallout 4 goty 1.22")
+            if (comboBox1.Text == "EU fallout 4 goty 1.22")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E573B4;
@@ -541,7 +554,7 @@ namespace Eboot.bin_Patcher
                 Fbw.Close();
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
-            if (textBox1.Text == "Extracted FPKG EU fallout 4 goty 1.22")
+            if (comboBox1.Text == "Extracted FPKG EU fallout 4 goty 1.22")
             {
                 BinaryWriter Fbw = new BinaryWriter(File.OpenWrite(OFD.FileName));
                 Fbw.BaseStream.Position = 0x1E57514;
@@ -566,7 +579,7 @@ namespace Eboot.bin_Patcher
                 MessageBox.Show("Your eboot.bin has been patched and will now look for mods.txt");
             }
 
-            else if (textBox1.Text == "")
+            else if (comboBox1.Text == "")
             {
                 MessageBox.Show("You Don't got anything typed");
             }
@@ -579,6 +592,11 @@ namespace Eboot.bin_Patcher
                 list form = new list();
                 form.Show();
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
